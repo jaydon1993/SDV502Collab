@@ -16,10 +16,37 @@ namespace StateCinemasWinApp
         {
             InitializeComponent();
         }
-
-        private void frmMain_Load(object sender, EventArgs e)
+        public decimal lcNumber;
+        public decimal lcYourNumber;
+        
+        private void GetReady()
         {
+            lcNumber = Convert.ToDecimal(lblNumber.Text);
+            lcYourNumber = Convert.ToDecimal(txtNumber.Text);
+        }
+           
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            GetReady();        
+            lblTotal.Text = (lcYourNumber + lcNumber).ToString();            
+        }
 
+        private void btnSub_Click(object sender, EventArgs e)
+        {
+            GetReady();
+            lblTotal.Text = (lcYourNumber - lcNumber).ToString();
+        }
+
+        private void bunDiv_Click(object sender, EventArgs e)
+        {
+            GetReady();
+            lblTotal.Text = (lcYourNumber / lcNumber).ToString();
+        }
+
+        private void btnMult_Click(object sender, EventArgs e)
+        {
+            GetReady();
+            lblTotal.Text = (lcYourNumber * lcNumber).ToString();
         }
     }
 }
