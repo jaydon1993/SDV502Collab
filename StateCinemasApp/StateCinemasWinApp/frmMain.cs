@@ -16,7 +16,6 @@ namespace StateCinemasWinApp
         {
             InitializeComponent();
         }
-
         public decimal lcNumber;
         public decimal lcYourNumber;
         

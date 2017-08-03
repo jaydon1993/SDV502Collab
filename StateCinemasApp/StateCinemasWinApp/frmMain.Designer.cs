@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtNumber = new System.Windows.Forms.TextBox();
             this.lblNumber = new System.Windows.Forms.Label();
@@ -149,13 +150,14 @@
             this.Controls.Add(this.btnAdd);
             this.Name = "frmMain";
             this.Text = "Form Main";
+
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
+          
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtNumber;
         private System.Windows.Forms.Label lblNumber;
